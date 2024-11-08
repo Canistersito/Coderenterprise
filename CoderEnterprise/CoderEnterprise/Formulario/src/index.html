@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <article id="contenedor2">
+        <header id="encabezado">
+            <a href="/CoderEnterprise/Landing/src/index.html" id="flecha">
+                <img src="../img/flecha.png" alt="flecha" >
+            </a >
+            <div id="cuenta">
+                <h1>CREAR UNA <br> CUENTA</h1>
+            </div>
+            <div id="inicio">
+                <h2>TinkerBell</h2>
+                <div>
+                    <p>M u s i c</p>
+                    <p>A p p</p>
+                </div>
+            </div>
+        </header>
+        <form action="/CoderEnterprise/Conexion/INSERT-Formulario.php" method="POST" id="formulario">
+            <div class="texts">
+                <p id="cedula">Ingresa la cédula</p>
+                <input type="text" placeholder="Cédula" name="CI" required>
+            </div>
+            <div class="texts">
+                <p id="contraseña">Contraseña nueva</p>
+                <input type="password" placeholder="Contraseña" name="contraseña" required>
+            </div>
+            <div class="texts">
+                <p id="confirmar">Confirmar contraseña</p>
+                <input type="password" placeholder="Confirmar" name="contraseña2" required>
+            </div>
+            <div id="boton">
+                <button>Crear Cuenta</button>
+            </div>
+            <div id="terminos">
+                <p>Al presionar 'Crear', aceptas los <a href="">términos y condiciones</a> de esta aplicación</p>
+            </div>
+        </form>
+    </article>
+</body>
+
+</html>

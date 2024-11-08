@@ -1,0 +1,246 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(90deg, #000000, #131313);
+    color: #fff;
+}
+@font-face {
+    font-family: 'MADE Waffle Soft';
+    src: url('../fonts/MADE\ Waffle\ Soft\ PERSONAL\ USE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Contenido Principal */
+#contenido-principal {
+    width: 100%;
+    padding: 20px;
+}
+
+#encabezado {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 200px;
+    height: 110px;
+    border-radius: 20px;
+    background-color: #1A1A1A;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 8px;
+}
+.logo div{
+    display: flex;
+}
+.logo h2 {
+    margin: 0;
+    color: #1CFF00;
+    font-size: 28px;
+    font-family: 'MADE Waffle Soft', sans-serif;
+}
+.logo p{
+    margin-right: 8px;
+    margin-left: 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.home {
+    display: flex;
+    background-color: #1A1A1A;
+    border-radius: 20px;
+    width: 75%;
+    height: 110px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.home h2{
+    margin: 0;
+    font-size: 35px;
+}
+.home input{
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.icono img{
+    width: 36px;
+}
+.icono{
+    text-align: center;
+    
+}
+.icono p{
+    font-size: 11px;
+}
+.icono button{
+    background: none;
+    border: none;
+}
+
+.perfil-usuario {
+    background-color: #1A1A1A;
+    border-radius: 20px;
+    width: 25%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.perfil-usuario img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 3.5px solid #FFFFFF;
+}
+.perfil-usuario div #usuario{
+    font-weight: bold;
+    font-size: 17px;
+}
+.perfil-usuario div p{
+    font-size: 10px;
+}
+#contenido{
+    background: linear-gradient(180deg, #1cff00, #000000, #1c1c1c, #1c1c1c);
+    border-radius: 20px;
+    padding: 20px;
+}
+#selecciona h2{
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#selecciones, #votadas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.tarjeta {
+    text-align: center;
+    position: relative;
+}
+.tarjeta img {
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.cancion #nombre,
+.tarjeta #nombre {
+    position: absolute;
+    bottom: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    left: 0px;
+    padding: 0px 10px;
+    width:225px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+.cancion #reloj, .tarjeta #reloj{
+    position: absolute;
+    width: 24px;
+    top: 10px;
+    right: 50px;
+}
+.cancion #minutos, .tarjeta #minutos{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+} 
+#recreo{
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+#recreo h2{
+    font-size: 28px;
+}
+#vivo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-left: 25px;
+}
+#vivo h2{
+    margin-left: 30px;
+}
+#vivo .rojo{
+    color: red;
+    margin-left: 15px;
+}
+#vivo button{
+    background-color: #FFDB1B;
+    border-radius: 15px;
+    padding: 10px 90px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #CBB41C;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.icono {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin: 20px; /* Margen para separación */
+}
+
+.icono img {
+    width: 36px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 36px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.icono p {
+    display: inline; /* Mostrar el texto en línea con la imagen */
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.dropdown-content {
+    display: none; /* Ocultar el contenido por defecto */
+    position: absolute; /* Posición absoluta */
+    background-color: #f9f9f9; /* Color de fondo del contenido */
+    min-width: 160px; /* Ancho mínimo */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1; /* Z-index para superposición */
+}
+
+.dropdown-content a {
+    color: black; /* Color del texto */
+    padding: 12px 16px; /* Espaciado */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Mostrar como bloque */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón */
+}
+
+.icono:hover .dropdown-content {
+    display: block; /* Mostrar el contenido al pasar el ratón */
+}

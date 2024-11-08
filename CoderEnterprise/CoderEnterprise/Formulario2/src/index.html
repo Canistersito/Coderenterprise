@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <article id="contenedor2">
+        <header id="encabezado">
+            <a href="/CoderEnterprise/Landing/src/index.html" id="flecha">
+                <img src="../img/flecha.png" alt="flecha">
+            </a>
+            <div id="cuenta">
+                <h1>INICIAR SESIÓN</h1>
+            </div>
+            <div id="inicio">
+                    <h2>TinkerBell</h2>
+                </a>
+                <div>
+                    <p>M u s i c</p>
+                    <p>A p p</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Formulario de inicio de sesión -->
+        <form action="/CoderEnterprise/Conexion/SELECT-Formulario2.php" method="POST" id="formulario">
+            <div class="texts">
+                <p id="cedula">Ingresa la cédula</p>
+                <input type="text" placeholder="Cédula" name="Cedula1">
+            </div>
+            <div class="texts">
+                <p id="contraseña">Contraseña</p>
+                <input type="password" placeholder="Contraseña" name="Tspass">
+            </div>
+            
+            <!-- Mostrar mensaje de error solo si existe -->
+         
+            <div id="boton">
+                <button type="submit">Ingresar</button>
+            </div>
+            <div id="terminos">
+                <p>Si continúas, aceptas los <a href="#">Términos del servicio</a>
+                    de Tinkerbell y confirmas que has leído nuestra <a href="#">Política de privacidad</a>.
+                </p>
+            </div>
+        </form>
+    </article>
+</body>
+</html>

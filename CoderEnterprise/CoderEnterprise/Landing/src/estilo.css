@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../img/utu.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@font-face {
+    font-family: 'MADE Waffle Soft';
+    src: url('../fonts/MADE\ Waffle\ Soft\ PERSONAL\ USE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+    z-index: 0;
+}
+
+#contenedor {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+#titulo #inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#titulo #inicio h2 {
+    font-size: 100px;
+    font-family: 'MADE Waffle Soft', sans-serif;
+    margin: 0;
+}
+#titulo #inicio img {
+    width: 90px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+    margin-left: 10px; /* Espacio entre el texto y la imagen */
+    object-fit: contain; /* Ajusta la imagen para que no se distorsione */
+}
+#titulo #music{
+    display: flex;
+    justify-content: center;
+}
+#titulo #music p {
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    margin-left: 30px;
+}
+#titulo #musica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#titulo #musica p {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #A6A6A6;
+    width: 90%;
+}
+
+#botones button {
+    padding: 5px 110px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#boton1 button {
+    background-color: #FFDB1B;
+    color: #764B4B;
+    padding: 5px 110px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#boton2 button {
+    font-weight:bold;
+    background-color: transparent;
+    border: 3px solid #A6A6A6;
+    color: #A6A6A6;
+    padding: 5px 95px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0;
+}
